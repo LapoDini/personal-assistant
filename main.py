@@ -1,14 +1,15 @@
 from functions.greet_and_speak import greet_user, take_user_input, speak
 from functions.os_ops import *
 from functions.online_ops import *
-from pprint import pprint
+from functions.side_fucntions import match_prompt
 
 if __name__ == "__main__":
     greet_user()
     while True:
         query = take_user_input().lower()
+        prompt = match_prompt(query)
 
-        match query:
+        match prompt:
             
             # Offline operations
             case 'open notepad':

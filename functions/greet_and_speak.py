@@ -55,6 +55,7 @@ def take_user_input():
     with sr.Microphone() as source:
         print('Listening...')
         r.pause_threshold = 1
+        #r.adjust_for_ambient_noise(source)
         audio = r.listen(source)
     
     try:
