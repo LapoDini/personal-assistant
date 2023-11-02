@@ -7,4 +7,7 @@ opening_text = [
 prompts = ['open notepad',
            'open calculator',
            'open camera',
-           'open command prompt']
+           'open command prompt',
+           'search on google',
+           'news',
+           'weather']
